@@ -1,0 +1,16 @@
+{
+  "include": ["src", "examples"],
+  "compilerOptions": {
+    "target": "es5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    /* Modules */
+    "module": "commonjs" /* Specify what module code is generated. */,
+    "rootDir": ".", // The entry point for all of our TypeScript files (make sure all .ts files are stored in a subdirectory of this!)
+    "rootDirs": ["./src", "./examples"],
+    "outDir": "./dist", // The directory which we'll be exporting our compiled JavaScript files to
+    "strict": true
+  }
+}

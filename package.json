@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "setup-globals.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "format:write": "scripty",
+    "format:check": "scripty",
+    "lint": "eslint src examples --ignore-path    .gitignore --ext .ts ",
+    "test": "ts-node examples/**/*.test.ts",
+    "test:watch": "npx nodemon examples/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "Dan Kreiger",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "chalk": "^4.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
